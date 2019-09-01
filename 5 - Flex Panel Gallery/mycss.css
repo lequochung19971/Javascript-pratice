@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    background: orange;
+}
+
+.panels {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.panel {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    box-shadow: inset 0 0 10px #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition:
+        font-size 0.8s cubic-bezier(.65, .2, .46, -0.62),
+        flex 0.8s cubic-bezier(.65, .2, .46, -0.62),
+        background 0.8s cubic-bezier(.65, .2, .46, -0.62),
+        box-shadow 0.8s cubic-bezier(.65, .2, .46, -0.62);
+
+}
+
+.panel>p {
+    margin: 0;
+    text-shadow: 1px 3px 7px #272727;
+    font-weight: 200;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    transition: transform 0.8s cubic-bezier(.65, .2, .46, -0.62);
+}
+
+.boxShadow {
+    box-shadow: inset 0 0 30px #444444;
+}
+
+.open-active {}
+
+.panel>p:nth-child(2) {
+    font-size: 2em;
+}
+
+.panel>p:first-child {
+    transform: translateY(-100%);
+}
+
+.open-active>p:first-child {
+    transform: translateY(0%);
+}
+
+.panel>p:last-child {
+    transform: translateY(100%);
+}
+
+.open-active>p:last-child {
+    transform: translateY(0%);
+}
+
+.open {
+    flex-grow: 5;
+    font-size: 80px;
+}
+
+
+.panel1 {
+    background-image: url(http://pavbca.com/walldb/original/c/1/4/535050.jpg);
+}
+
+.panel2 {
+    background-image: url(http://pavbca.com/walldb/original/a/e/4/320800.jpg);
+
+}
+
+.panel3 {
+    background-image: url(http://pavbca.com/walldb/original/d/d/b/400736.jpg);
+}
+
+.panel4 {
+    background-image: url(https://wallpaperplay.com/walls/full/9/e/1/207523.jpg);
+}
+
+.panel5 {
+    background-image: url(https://www.tokkoro.com/picsup/5088289-anime-blonde-man-one-piece-sanji-one-piece-smoking.png);
+}

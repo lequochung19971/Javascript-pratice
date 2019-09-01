@@ -1,0 +1,23 @@
+.clock {
+    border: solid 15px blue;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.clock-face {
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    padding: 0;
+    height: 5px;
+    width: 200px;
+    background: black;
+    position: absolute;
+    top: 27%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+}

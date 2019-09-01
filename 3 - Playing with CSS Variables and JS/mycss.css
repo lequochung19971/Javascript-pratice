@@ -1,0 +1,33 @@
+:root {
+    --baseColor: #FF0000;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+body {
+    text-align: center;
+    background: #333333;
+    color: white;
+}
+
+label {
+    font-size: 40px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+h2>span {
+    color: var(--baseColor);
+}
+
+img {
+    width: auto;
+    height: 400px;
+    margin-top: 30px;
+    background: var(--baseColor);
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+}
