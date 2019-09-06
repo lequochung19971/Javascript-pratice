@@ -1,0 +1,86 @@
+html {
+    background-image: url('533498-bananas-muffins-food.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+svg {
+    margin-top: 80px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+.wrapper>h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+}
+
+.basket {
+    list-style: none;
+    padding: 0;
+
+}
+
+.basket>li {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 18px;
+    border-bottom: 1px solid #b8b8b8;
+    height: 40px;
+}
+
+.basket label {
+    cursor: pointer;
+}
+
+.basket>li>input {
+    margin: 0 15px 0 0;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.basket input+label:before {
+    content: '⬜️';
+    margin-right: 10px;
+}
+
+.basket input:checked+label:before {
+    content: '🌮';
+}
+
+form>input {
+    padding: 7px;
+    color: #494949;
+}
+
+input[type=text] {
+    border-color: 1px solid #b8b8b8;
+}
+
+input[type=submit] {
+    border: none;
+    padding: 9px;
+    background: linear-gradient(to right, #ffff00, #e6e600, #cccc00);
+}
