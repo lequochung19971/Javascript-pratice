@@ -1,0 +1,130 @@
+html {
+    background: #ff8513;
+}
+
+.cool {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.cool>li {
+    margin: 30px;
+    text-align: center;
+}
+
+.cool>li>a {
+    text-decoration: none;
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    color: #6aff13;
+    font-size: 23px;
+}
+
+.dropdown {
+    margin-top: 30px;
+    padding: 25px;
+    text-align: start;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s;
+    display: none;
+    margin-left: -190px;
+    position: absolute;
+}
+
+.mouseenter .dropdown {
+    display: block;
+}
+
+.mouseenter-show .dropdown {
+    opacity: 1;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    max-width: 450px;
+}
+
+.bio>p {
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.courses {
+    line-height: 2;
+    list-style: none;
+    margin-left: -100px;
+}
+
+.courses>li {
+    border-bottom: 1px solid #c9c9c9;
+    font-size: 17px;
+}
+
+.courses a {
+    text-decoration: none;
+    color: #6aff13;
+}
+
+.dropdown3 {
+    margin-left: -20px;
+}
+
+.dropdown3>li {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.dropdown3>li:first-child {
+    background: #1db8ff;
+}
+
+.dropdown3>li:last-child {
+    background: #fffb00;
+}
+
+.dropdown3>li:nth-child(3) {
+    background: #000000;
+}
+
+.dropdown3>li:nth-child(2) {
+    background: #3B5998;
+}
+
+.dropdown3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.arrow {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
+}
+
+.dropdownBackground {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #ffffff;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px #969494;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    z-index: -1;
+}
+
+.dropdownBackground.open {
+    opacity: 1;
+}

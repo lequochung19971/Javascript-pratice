@@ -17,8 +17,6 @@ const slideImgs = document.querySelectorAll('.slide-in');
 
 function checkSlide(e) {
     slideImgs.forEach(img => {
-        //Scroll value of half the image
-        // const halfImg = (window.scrollY + window.innerHeight) - img.height / 2;
 
         const isHalfImg = img.offsetTop + (img.height / 2) - window.innerHeight;
         const outHalfImg = isHalfImg + window.innerHeight;

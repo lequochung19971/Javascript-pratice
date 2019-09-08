@@ -1,0 +1,91 @@
+html {
+    background: #d6d6d6;
+}
+
+header {
+    background-image: url('https://wallpapermemory.com/uploads/742/forest-wallpaper-full-hd-349021.jpg');
+    margin: 0;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: #ffffff;
+    font-size: 45px;
+    text-shadow: 7px 7px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000000;
+    max-width: 100%;
+
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: all .5s;
+
+}
+
+
+
+nav li {
+    text-align: center;
+    width: 20%;
+    padding: 20px 0 20px 0;
+
+}
+
+nav>ul a {
+    text-decoration: none;
+    font-size: 28px;
+    color: #ffffff;
+
+}
+
+.logo {
+    background: #ffffff;
+    transition: all .7s;
+    max-width: 0;
+}
+
+.logo>a {
+    color: #000000;
+    font-weight: 600;
+}
+
+.site-wrap {
+    margin: 100px auto;
+    height: auto;
+    width: 600px;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 30px #a5a5a5;
+    font-size: 23px;
+    line-height: 2;
+    transform: scaleX(0.97);
+    transition: transform .5s;
+}
+
+.sticky-wrap {
+    transform: scaleX(1);
+    transition: transform .5s;
+}
